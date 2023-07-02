@@ -151,7 +151,7 @@ textarea {
   display: block;
   width: 100%;
   padding: 30px;
-  background-color: var(--brand-dark);
+  background-color: var(--brand-grey);
   border: solid 2px var(--brand-white);
   color: var(--brand-white);
 }
@@ -165,7 +165,7 @@ textarea:active {
 
 label {
   text-transform: uppercase;
-  background-color: var(--brand-dark);
+  background-color: var(--brand-grey);
   padding: 0 10px;
   position: absolute;
   top: -0.6em;
@@ -175,6 +175,7 @@ label {
 #contact {
   max-width: 900px;
   margin: 0 auto;
+  background-color: var(--brand-grey);
 }
 
 footer {
