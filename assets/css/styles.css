@@ -106,7 +106,7 @@ body {
 
 .hero {
   background: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, .65) 100%),
-    url(/assets/images/hero-image.webp), lightgray 50% / cover no-repeat fixed;
+    url(./assets/images/hero-image.webp), lightgray 50% / cover no-repeat fixed;
 }
 
 .hero header {
