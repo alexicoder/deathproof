@@ -1,22 +1,24 @@
 @font-face {
   font-family: "eurostileregular";
-  src: url("./assets/fonts/eurostile-webfont.woff2") format("woff2"),
-    url("./assets/fonts/eurostile-webfont.woff") format("woff");
+  src: url("/assets/fonts/eurostile-webfont.woff2") format("woff2"),
+    url("/assets/fonts/eurostile-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Rubik-Light";
-  src: url("./assets/fonts/rubik-variablefont_wght-webfont.woff2")
+  src: url("/assets/fonts/rubik-variablefont_wght-webfont.woff2")
       format("woff2"),
-    url("./assets/fonts/rubik-variablefont_wght-webfont.woff") format("woff");
+    url("/assets/fonts/rubik-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal, 500;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
-  --brand: #29e7d7;
+  --brand: #36fbea;
   --brand-faded: rgba(125, 249, 255, 0.5);
   --brand-white: #b3dbd8;
   --brand-grey: #0f191e;
@@ -50,7 +52,7 @@ body {
 }
 
 .big-title {
-  font-size: clamp(2.3em, 4.5vw, 3.5em);
+  font-size: clamp(2.5em, 4.5vw, 3.7em);
   font-weight: 900;
   font-family: var(--heading-font);
   text-transform: uppercase;
@@ -111,7 +113,7 @@ body {
 
 .hero header {
   width: 100%;
-  max-width: 750px;
+  max-width: 37em;
 }
 
 .hero header p {
