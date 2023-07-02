@@ -94,18 +94,18 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
-  transition: all ease-out .4s;
+  transition: all ease-out 0.4s;
   border-bottom: solid 2px transparent;
 }
 
 .nav-item:hover,
 .nav-item:focus,
 .nav-item:active {
-    border-bottom: solid 2px var(--brand);
+  border-bottom: solid 2px var(--brand);
 }
 
 .hero {
-  background: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, .65) 100%),
+  background: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, 0.65) 100%),
     url(/assets/images/hero-image.webp), lightgray 50% / cover no-repeat fixed;
 }
 
@@ -176,19 +176,19 @@ label {
 }
 
 footer {
-    background-color: var(--brand-grey);
+  background-color: var(--brand-grey);
 }
 
 .copyright {
-    font-size: 14px;
-    text-transform: capitalize;
-    text-align: center;
-    padding: 10px 0;
-    border-top: solid 1px var(--brand-white);
+  font-size: 14px;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px 0;
+  border-top: solid 1px var(--brand-white);
 }
 
 @media screen and (min-width: 992px) {
-    .section-margin {
-        margin-bottom: 12em;
-    }
+  .section-margin {
+    margin-bottom: 12em;
+  }
 }
