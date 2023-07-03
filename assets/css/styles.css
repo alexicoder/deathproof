@@ -104,6 +104,10 @@ body {
   pointer-events: none;
 }
 
+.btn-sm {
+  padding: .2em .4em;
+}
+
 .brand {
   width: 50px;
 }
@@ -149,17 +153,8 @@ nav ul {
 }
 
 .social-block i {
-  padding: 0.4em;
-  background-color: var(--brand-white);
   text-decoration: none;
   font-size: 1.6em;
-  color: var(--brand-dark);
-  transition: background-color ease-in 0.3s, transform ease-in 0.3s;
-}
-
-.social-block i:hover {
-  background-color: var(--brand);
-  transform: scale(1.2);
 }
 
 form {
