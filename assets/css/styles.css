@@ -201,7 +201,8 @@ label {
 #contact {
   max-width: 900px;
   margin: 0 auto 7.5em auto;
-  background: linear-gradient(90deg,#29e7d732, #fe327d2c)
+  background: linear-gradient(90deg,#29e7d732, #fe327d2c);
+  box-shadow: 0px 3px 0px 0px var(--brand), 0px -3px 0px 0px var(--brand-second), 3px 0px 0px 0px var(--brand-second), -3px 0px 0px 0px var(--brand);
 }
 
 footer {
