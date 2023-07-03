@@ -19,6 +19,7 @@
 
 :root {
   --brand: #36fbea;
+  --brand-second: #FE327E;
   --brand-faded: rgba(125, 249, 255, 0.5);
   --brand-white: #b3dbd8;
   --brand-grey: #0f191e;
@@ -57,12 +58,16 @@ body {
   font-family: var(--heading-font);
   text-transform: uppercase;
   color: var(--brand);
+  text-shadow: 0 3px 0 var(--brand-faded), 0 4px 0 var(--brand-grey);
 }
 
 .small-title {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+  border-bottom: solid 1px var(--brand-white);
+  padding: 10px;
+  max-width: fit-content;
 }
 
 .btn-primary {
@@ -74,14 +79,14 @@ body {
   color: inherit;
   text-transform: uppercase;
   font-weight: 400;
-  box-shadow: 4px 4px 0px 0px var(--brand), 5px 5px 0px 0px rgba(4, 7, 8, 0.7);
-  transition: all ease-out 0.4s;
+  box-shadow: 0px 3px 0px 0px var(--brand), 0px -3px 0px 0px var(--brand-second), 3px 0px 0px 0px var(--brand-second), -3px 0px 0px 0px var(--brand);
+  transition: all ease-in-out 0.4s;
 }
 
 .btn-primary:hover {
-  background: var(--brand);
-  color: var(--brand-dark);
-  box-shadow: 0px 0px 0px 3px var(--brand-dark), 0px 0px 0px 2px #72e3e8;
+  background-color: var(--brand-dark);
+  color: var(--brand);
+  box-shadow: 0px 3px 0px 0px var(--brand-second), -3px 0px 0px 0px var(--brand-second), 3px 0px 0px 0px var(--brand), 0px -3px 0px 0px var(--brand);
 }
 
 .brand {
@@ -92,12 +97,18 @@ body {
   background: rgba(4, 7, 8, 0.5) !important;
 }
 
+nav ul {
+  list-style: none;
+}
+
 .nav-item {
   text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
-  transition: all ease-out 0.4s;
+  transition: all ease-in-out 0.6s;
   border-bottom: solid 2px transparent;
+  color: inherit;
+  position: relative;
 }
 
 .nav-item:hover,
@@ -164,17 +175,18 @@ textarea:active {
 }
 
 label {
-  text-transform: uppercase;
+  text-transform: capitalize;
   background-color: var(--brand-grey);
-  padding: 0 10px;
+  padding: 3px 15px;
   position: absolute;
-  top: -0.6em;
-  left: 1.25em;
+  top: -0.9em;
+  left: 0;
+  border: solid 2px var(--brand-white);
 }
 
 #contact {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 7.5em auto;
   background-color: var(--brand-grey);
 }
 
@@ -193,5 +205,9 @@ footer {
 @media screen and (min-width: 992px) {
   .section-margin {
     margin-bottom: 12em;
+  }
+
+  #contact {
+    margin: 0 auto 12em auto;
   }
 }
